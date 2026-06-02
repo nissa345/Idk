@@ -1,4 +1,4 @@
-wait(1)
+
 ---------------------------
 local MaxMana = 5000000 -- Max Mana You Can Get
 local Mana = 5000000 -- Mana You Start With
