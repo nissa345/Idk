@@ -3639,7 +3639,3 @@ mas:Destroy()
 for i=1,#cors do
 coroutine.resume(cors[i])
 end
-
-
-game.Players.LocalPlayer.Character.Head.face:Remove()
-game.Players.LocalPlayer.Character.Head.Transparency = 0
