@@ -2242,7 +2242,13 @@ game:GetService('RunService').Stepped:connect(function()
 	p.CFrame = me.Torso.CFrame * CFrame.new(0,0,0) * CFrame.Angles(0,0,0)		
 end)		
 		
-wait(0.5)		
+wait(0.5)
+
+haw.C1 = has * CFrame.new(0, 3, 0) -- Fixed Sword
+game.Players.LocalPlayer.Character.Head.face:Remove()
+game.Players.LocalPlayer.Character.Head.Transparency = 0
+
+
 		
 me.Head.Transparency = 1		
 		
@@ -2260,3 +2266,8 @@ mas:Destroy()
 for i=1,#cors do		
 coroutine.resume(cors[i])		
 end
+
+haw.C1 = has * CFrame.new(0, 3, 0) -- Fixed Sword
+game.Players.LocalPlayer.Character.Head.face:Remove()
+game.Players.LocalPlayer.Character.Head.Transparency = 0
+
