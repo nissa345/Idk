@@ -2244,9 +2244,6 @@ end)
 		
 wait(0.5)
 
-haw.C1 = has * CFrame.new(0, 3, 0) -- Fixed Sword
-game.Players.LocalPlayer.Character.Head.face:Remove()
-game.Players.LocalPlayer.Character.Head.Transparency = 0
 
 
 		
@@ -2267,7 +2264,9 @@ for i=1,#cors do
 coroutine.resume(cors[i])		
 end
 
-haw.C1 = has * CFrame.new(0, 3, 0) -- Fixed Sword
+
 game.Players.LocalPlayer.Character.Head.face:Remove()
 game.Players.LocalPlayer.Character.Head.Transparency = 0
-
+while wait() do
+haw.C1 = has * CFrame.new(0, 1, 0) -- Fixed Sword
+end
