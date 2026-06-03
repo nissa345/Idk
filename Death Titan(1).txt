@@ -209,7 +209,7 @@ hs = hw.C1
 -----		
 for _,Part in pairs(Char:GetChildren()) do		
 	if Part:IsA('BasePart') then		
-		Part.CustomPhysicalProperties = PhysicalProperties.new(0, .3, .5)		
+		Part.CustomPhysicalProperties = PhysicalProperties.new(0, .3, .6)		
 	end		
 end		
 --------------------------------------------------------		
