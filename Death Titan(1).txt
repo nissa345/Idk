@@ -293,6 +293,8 @@ do
 end
 has = haw.C1
 
+haw.C1 = has * CFrame.new(0, 2, 0)
+
 for _,v in pairs(Pack:GetChildren()) do
 	v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0)
 end
@@ -2267,6 +2269,3 @@ end
 
 game.Players.LocalPlayer.Character.Head.face:Remove()
 game.Players.LocalPlayer.Character.Head.Transparency = 0
-while wait() do
-haw.C1 = has * CFrame.new(0, 1, 0) -- Fixed Sword
-end
